@@ -24,7 +24,7 @@ basic.forever(function () {
             zprevious = z
             z = input.acceleration(Dimension.Z)
             if (z < -950) {
-                if (zprevious > 0) {
+                if (zprevious > -950) {
                     count += 1
                 }
             } else {
